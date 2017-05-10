@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>炒黄金赚大钱</title>
+    <meta id="viewport" content="width=device-width,initial-scale=1" name="viewport" />
+    <!-- <meta id="viewport" content="width=device-width, user-scalable=yes,initial-scale=1" name="viewport" /> -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script>
+        function ChangePx() {
+            var b = document.documentElement,
+                    a = function() {
+                        var a = b.getBoundingClientRect().width;
+                        b.style.fontSize = (100 / 640) * (a >= 640 ? 640 : a) + "px"
+                    },
+                    c = null;
+            window.addEventListener("resize", function() {
+                clearTimeout(c);
+                c = setTimeout(a, 1)
+            });
+            a()
+        }
+        ChangePx();
+        $(window).bind('orientationchange' || 'resize', ChangePx);
+    </script>
+</head>
+<body>
+<!--banner-->
+<div class="banner">
+    <div class="banner_box">
+        <img src="images/banner1.png">
+        <img src="images/banner2.png">
+        <img src="images/banner3.png">
+    </div>
+</div>
+<div class="banner_text">
+   <h3>外汇交易</h3> 
+    <p>千万投资者信赖的投资方式</p>
+</div>
+<!--注册-->
+<form action="#" class="form-reg">
+	<div>您的姓名：<input class="banner-name" type="text" name="Name" /></div>
+	<div>手机号码：<input class="banner-tel" type="text" name='Tel' /></div>
+	<div>
+		<span style="visibility: hidden;">手</span>验证码：<input class="banner-code" type="text" name='code'/>
+		  	  <input class="banner-codebtn" type='button' name='codebtn' value='获取验证码'/>
+	</div>
+	<input class='banner-sub' type="button" name="Button" value='立即注册' style="-webkit-appearance: none;"/>		
+</form>
+<div class="container">
+	<!--item1 交易机会多 盈利机会多-->
+	<div class="item1">
+		<div class="item1-t">
+			交易机会多 盈利机会多
+		</div>
+		<p style="font-size:0.22rem;color:#595959;line-height:0.3rem;text-align:center;margin-bottom:0.5rem;">
+			股票式投资，用1000赚10000比股票还赚钱
+		</p>
+		<ul class="item1-con clearfix">
+				<li>
+					<img src="images/item1-1.png" alt="" />
+					<h3>双向交易</h3>
+					<p>
+						买涨买跌均可获利<br/>
+						随买随卖操作简单灵活
+					</p>
+				</li>
+				<li>
+					<img src="images/item1-2.png" alt="" />
+					<h3>T+0</h3>
+					<p>
+						当天买当天卖<br />
+						不放过每一次赚钱机会
+					</p>
+				</li>
+				<li>
+					<img src="images/item1-3.png" alt="" />
+					<h3>500倍杠杆</h3>
+					<p>
+						500倍杠杆投资<br />
+						放大资金收益1000倍
+					</p>
+				</li>
+				<li>
+					<img src="images/item1-4.png" alt="" />
+					<h3>门槛低</h3>
+					<p>
+						$10即可交易<br />
+						0佣金
+					</p>
+				</li>
+			</ul>
+	</div>
+	<!--item2 投资收益案例-->
+	<div class="item2">
+		<div class="item2-t">投资收益案例</div>
+		<div class="item2-con">
+			<div class="item2-gu">
+				<img src="images/gu.png" alt="" />
+				<img src="images/person.png" alt="" />
+			</div>
+			<p>宋先生开户入金$200美元及赠送1000美金，账户共1200美金，在
+			       美国大选前投入300美元，在500倍杠杆放大下，操作了150000美
+			       元的资金，在伦敦金行情为1276美元/盎司时买入伦敦金，当天美国
+			       大选金价上涨至1337美元/盎司，并于1321美元/盎司平仓，收益
+			       为45个点，因下单为0.3手
+			   <span>共获利7750美元。</span>
+			</p>
+		</div>
+	</div>
+	<!--item3 为什么外汇投资收益多？-->
+	<div class="item3">
+		<div class="item3-t">为什么外汇投资收益多？</div>
+			<div class="item3-con clearfix">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<th></th>
+						<th>外汇</th>
+						<th>股票</th>
+						<th>基金</th>
+					</tr>
+					<tr>
+						<td>投入资金</td>
+						<td>少</td>
+						<td>多</td>
+						<td>多</td>
+					</tr>
+					<tr>
+						<td>盈利方式</td>
+						<td>涨跌皆可盈利</td>
+						<td>上涨才可盈利</td>
+						<td>上涨才可盈利</td>
+					</tr>
+					<tr>
+						<td>交易方式</td>
+						<td>保证金制 <br />500倍杠杆</td>
+						<td>实盘交易</td>
+						<td>实盘交易</td>
+					</tr>
+					<tr>
+						<td>投资收益</td>
+						<td>高</td>
+						<td>一般</td>
+						<td>低</td>
+					</tr>
+					<tr>
+						<td>资金安全</td>
+						<td>高</td>
+						<td>一般</td>
+						<td>低</td>
+					</tr>
+				</table>				
+			</div>				
+	</div>		
+		
+	<!--item4 用户晒单-->
+	<div class="item4">
+			<div class="item4-t">用户晒单</div>
+			<ul class="item4-con clearfix" style="position:relative;">
+				<li>
+					<ul class="clearfix">
+						<li>13天做单7笔 <span>|</span></li>
+						<li>投入$ <em>60</em><span>|</span></li>
+						<li>获利$<em>193.33</em></li>
+					</ul>
+					<p>刚接触，听了老师的建议，小试了几次，获利比我想象中的简单，主要是
+						<span>投入少</span>
+						，适合我！
+					</p>
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>产品 <span>|</span></th>
+							<th>方向<span>|</span> </th>
+							<th>投入金额<span>|</span></th>
+							<th>开仓价<span>|</span></th>
+							<th>平仓价<span>|</span></th>
+							<th>持仓时长<span>|</span></th>
+							<th>盈亏</th>
+						</tr>
+						<tr>
+							<td>伦敦金</td>
+							<td>买跌</td>
+							<td>$<span class="large">20</span></td>
+							<td class='large'>1186.83</td>
+							<td class="large">1180.43</td>
+							<td> <span class="large">14</span>分钟</td>
+							<td class="green">+$<span class="large">12.80</span></td>
+						</tr>
+						<tr>
+							<td>伦敦金</td>
+							<td>买跌</td>
+							<td>$<span class="large">30</span></td>
+							<td class='large'>1191.01</td>
+							<td class="large">1183.57</td>
+							<td> <span class="large">9</span>分钟</td>
+							<td class="green">+$<span class="large">22.32</span></td>
+						</tr>
+						<tr>
+							<td>伦敦金</td>
+							<td>买涨</td>
+							<td>$<span class="large">15</span></td>
+							<td class='large'>1179.86</td>
+							<td class="large">1186.11</td>
+							<td> <span class="large">7</span>分钟</td>
+							<td class="green">+$<span class="large">9.38</span></td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<ul class="clearfix">
+						<li>28天做单9笔 <span>|</span></li>
+						<li>投入$ <em>350</em><span>|</span></li>
+						<li>获利$ <em>686.96</em></li>
+					</ul>
+					<p>之前炒过股票，炒金其实和炒股是一样的，而且
+						<span>涨跌都能赚</span>，这点相当吸引我。
+					</p>
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<th>产品<span>|</span></th>
+							<th>方向<span>|</span> </th>
+							<th>投入金额<span>|</span></th>
+							<th>开仓价<span>|</span></th>
+							<th>平仓价<span>|</span></th>
+							<th>持仓时长<span>|</span></th>
+							<th>盈亏</th>
+						</tr>
+						<tr>
+							<td>伦敦金</td>
+							<td>买跌</td>
+							<td>$<span class="large">60</span></td>
+							<td class='large'>1189.64</td>
+							<td class="large">1180.43</td>
+							<td> <span class="large">21</span>分钟</td>
+							<td class="green">+$<span class="large">55.26</span></td>
+						</tr>
+						<tr>
+							<td>伦敦金</td>
+							<td>买涨</td>
+							<td>$<span class="large">110</span></td>
+							<td class='large'>1181.06</td>
+							<td class="large">1183.07</td>
+							<td> <span class="large">19</span>分钟</td>
+							<td class="green">+$<span class="large">22.11</span></td>
+						</tr>
+						<tr>
+							<td>伦敦金</td>
+							<td>买涨</td>
+							<td>$<span class="large">80</span></td>
+							<td class='large'>1175.23</td>
+							<td class="large">1184.19</td>
+							<td> <span class="large">39</span>分钟</td>
+							<td class="green">+$<span class="large">71.68</span></td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+			<div class="btn-two clearfix">
+				<div class="btn btn1 lf">开户领美元</div>
+				<div class="btn btn2 rt ">体验模拟交易</div>
+			</div>
+		</div>
+</div>
+<!--弹出注册框-->
+	<div class="modal-outer"  style="display:none;">
+		<form action="#" class="modal-form clearfix">
+			<div class="modal-close">x</div>
+			<h3>立即领取1000美元</h3>
+			<input class="name" type="text" name="Name" placeholder="请输入您的姓名" />
+			<input class="tel" type="text" name="Tel" placeholder="请输入您的手机号"/>
+			<input class="reg" type="text" name="code" placeholder="请输入验证码"  style=""/>
+			<input class="reg-btn" type="button" name="codebtn" value="获取验证码" />
+			<input class="submit" type="button" name="Button" value="马上注册" />
+		</form>
+	</div>
+<!--硬币-->
+<footer>
+    <p>公司名称：深圳市国诚投资咨询有限公司上海分公司</p>
+    <p>地址：中国（上海）自由贸易试验区商城路618号11层1111室</p>
+    <p>沪ICP备16055126号-3</p>
+    <p>股市有风险，入市需谨慎</p>
+</footer>
+
+<script>
+    $(function () {
+    	$('.btn').click(function () {
+            $('.modal-outer').show();
+        });
+        $('.modal-close').click(function () {
+            $('.modal-outer').hide();
+        });               
+    })
+</script>
+
+
+
+</body>
+</html>
